@@ -1,0 +1,15 @@
+import { Router } from "express";
+import { AuthControllers } from "./auth.contoller";
+
+
+
+const router = Router()
+
+router.post("/login", AuthControllers.creadentialLogin)
+router.post("/refresh-token", AuthControllers.getNewAccessToken)
+router.post("/logout" , AuthControllers.logout)
+
+
+
+
+export const AuthRoutes = router;
