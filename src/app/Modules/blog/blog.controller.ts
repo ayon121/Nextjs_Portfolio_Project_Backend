@@ -20,7 +20,7 @@ export const createBlog = async (req: Request, res: Response, next: NextFunction
     };
 
     const created = await Blog.create(newBlog);
-    res.status(201).json({ message: "Blog created successfully", blog: created });
+    res.status(201).json({ success : true , message: "Blog created successfully", blog: created });
   } catch (error: any) {
     next(error);
   }
