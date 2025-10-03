@@ -3,6 +3,7 @@ import { Userrouter } from "../user/user.route"
 import { AuthRoutes } from "../auth/auth.route"
 import Blogrouter from "../blog/blog.route"
 import { ProjectRoutes } from "../project/project.route"
+import { Aboutrouter } from "../about/about.route"
 
 export const router = Router()
 const moduleRoutes = [
@@ -21,6 +22,10 @@ const moduleRoutes = [
     {
         path : "/projects",
         route : ProjectRoutes,
+    },
+    {
+        path : "/about",
+        route : Aboutrouter,
     },
 ]
 
