@@ -26,7 +26,7 @@ app.use(express.json())
 app.use(cookie())
 
 app.use(cors({
-  origin: ["http://localhost:3000" ],
+  origin: ["https://nextjsfrontend-eta.vercel.app" , "http://localhost:3000" ],
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
@@ -38,10 +38,9 @@ app.use("/api/v1/", router)
 
 app.get("/", (req: Request, res: Response) => {
     res.status(200).json({
-        message: "Welcome to Tour Management System Backend"
+        message: "Welcome to Protfolio  Backend"
     })
 })
-
 
 app.use(GlobalErrorHandler)
 

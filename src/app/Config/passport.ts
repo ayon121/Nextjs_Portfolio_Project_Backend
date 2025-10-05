@@ -65,7 +65,7 @@ passport.use(
                         email,
                         name: profile.displayName,
                         picture: profile.photos?.[0].value,
-                        role: Role.USER,
+                        role: Role.SUPER_ADMIN,
                         isVerified: true,
                         auths: [
                             {
