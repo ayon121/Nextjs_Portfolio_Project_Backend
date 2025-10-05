@@ -5,17 +5,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.router = void 0;
 const express_1 = require("express");
-const user_route_1 = require("../user/user.route");
 const auth_route_1 = require("../auth/auth.route");
 const blog_route_1 = __importDefault(require("../blog/blog.route"));
 const project_route_1 = require("../project/project.route");
 const about_route_1 = require("../about/about.route");
 exports.router = (0, express_1.Router)();
 const moduleRoutes = [
-    {
-        path: "/user",
-        route: user_route_1.Userrouter
-    },
     {
         path: "/auth",
         route: auth_route_1.AuthRoutes

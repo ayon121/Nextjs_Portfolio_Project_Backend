@@ -24,8 +24,9 @@ app.use(passport_1.default.initialize());
 app.use(passport_1.default.session());
 app.use(express_1.default.json());
 app.use((0, cookie_parser_1.default)());
+// "https://nextjsfrontend-eta.vercel.app" 
 app.use((0, cors_1.default)({
-    origin: ["https://nextjsfrontend-eta.vercel.app", "http://localhost:3000"],
+    origin: "https://nextjs-portfolio-project-frontend.vercel.app",
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
